@@ -1,6 +1,6 @@
 # Bookfolio-React-Native-App
 
-![Image](https://i.ibb.co/17HdJsW/Bookfolio-1.png)
+![Image](https://i.ibb.co/gvfhXBC/Bookfolio-2-1.png)
 
 
 

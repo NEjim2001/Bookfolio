@@ -2,7 +2,9 @@
 
 ![Image](https://i.ibb.co/gvfhXBC/Bookfolio-2-1.png)
 
+## Demo
 
+[![Watch the Demo](https://github.com/NEjim2001/Bookfolio/assets/144557253/ddc28d2a-1188-484d-a9d0-c6aee8c1dde0)](https://www.youtube.com/watch?v=uYHivVtHCXc)
 
 # Bookfolio
 
@@ -10,7 +12,7 @@ Bookfolio is a React native bookcase app designed to help you organize and manag
 
 ## Key Features
 
-- **Book Tracker:** Utilizes the Google Books API to seamlessly track and manage your book collection.
+- **Book Tracker:** Utilizes the Google Books API to track and manage your book collection seamlessly.
 - **Note-Taking:** Incorporates Firebase NoSQL for efficient and secure storage of user-generated book notes.
 
 ## Project Overview
@@ -23,7 +25,7 @@ Bookfolio is a React native bookcase app designed to help you organize and manag
 
 ### Backend
 
-- **API Integration:** Leveraged JavaScript to make calls to the Google Books API for comprehensive book data.
+- **API Integration:** Leveraged JavaScript to call the Google Books API for comprehensive book data.
 - **Authentication and Data Storage:** Implemented Firebase to handle user authentication and securely store user data.
 
 ## Future Enhancements
@@ -36,20 +38,18 @@ If given more time, the following improvements would be considered:
 
 ## Available Scripts
 
-install dev dependencies
+Install dev dependencies
 
-### `npm install` or `yarn install`
+### `npm install` 
 
-## Then
-
-Run The app
-
-### `npm start`
+Pod install
 ### `cd ios` and `pod install`
 
-Runs your app in development mode.
+Run The App
+### `npm start`
 
+Run your app in development mode.
 #### `npm run ios`
 
-Like `npm start` / `yarn start`, but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed.
+Like `npm start` but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed.
 

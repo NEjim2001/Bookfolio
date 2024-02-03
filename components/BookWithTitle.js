@@ -22,7 +22,7 @@ export default function BookWithTitle({
   };
 
   return (
-    <View>
+    <>
       {noteBadge ? (
         <View className="right-1 top-1 absolute z-10">
           <ChatBubbleBottomCenterIcon size={25} color={'gold'} />
@@ -62,6 +62,6 @@ export default function BookWithTitle({
       ) : (
         <View></View>
       )}
-    </View>
+    </>
   );
 }

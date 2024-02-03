@@ -11,19 +11,21 @@ export const getUserBookShelf = async shelfNumber => {
       throw new Error('User not authenticated.');
     }
 
-    const res = await axios.get(
-      `${googleBookUrl}/mylibrary/bookshelves/${shelfNumber}/volumes`,
-      {
-        headers: {
-          Authorization: `Bearer ${tokens.accessToken}`,
-          'Content-Type': 'application/json',
+    const res = await axios
+      .get(
+        `${googleBookUrl}/mylibrary/bookshelves/${shelfNumber}/volumes?country=US`,
+        {
+          headers: {
+            Authorization: `Bearer ${tokens.accessToken}`,
+            'Content-Type': 'application/json',
+          },
+          params: {
+            startIndex: 0,
+            maxResults: 100,
+          },
         },
-        params: {
-          startIndex: 0,
-          maxResults: 100,
-        },
-      },
-    );
+      )
+      .catch(error => console.log(error.message));
 
     let data = res.data;
     return data;
@@ -76,9 +78,7 @@ export const addBookToShelf = async (shelf, id) => {
       },
     );
 
-    console.log(res.status);
-
-    return res.status;
+    return res.data;
   } catch (error) {
     console.log(error.response.data.error);
     return {success: false, msg: error.message};
@@ -104,9 +104,7 @@ export const removeBookFromShelf = async (shelf, id) => {
       },
     );
 
-    console.log(res.status);
-
-    return res.status;
+    return res.data;
   } catch (error) {
     console.log(error.response.data.error);
     return {success: false, msg: error.message};

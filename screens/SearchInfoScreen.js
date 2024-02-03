@@ -1,4 +1,4 @@
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {View, Text, Image, TouchableOpacity, Alert} from 'react-native';
 import {useState} from 'react';
 import {colors} from '../theme';
 import {ArrowLeftIcon} from 'react-native-heroicons/outline';
@@ -22,8 +22,9 @@ export default function SearchInfoScreen(props) {
   const handleAddBook = async () => {
     try {
       if (shelf) await addBookToShelf(shelf, id);
+      Alert.alert('Book added to section');
     } catch (error) {
-      console.error('Error during Google Sign-In:', error);
+      console.error('Error adding book', error);
     }
   };
 

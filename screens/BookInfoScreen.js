@@ -185,8 +185,10 @@ export default function BookInfoScreen(props) {
                       style={{backgroundColor: colors.main}}
                       className="w-full p-4 items-center rounded-lg"
                       onPress={handleAddBook}>
-                      <Text style={{color: 'white'}} className="font-semibold">
-                        Add to list{' '}
+                      <Text
+                        style={{color: 'white'}}
+                        className="font-semibold text-lg">
+                        Add to list
                       </Text>
                     </TouchableOpacity>
                   </View>
